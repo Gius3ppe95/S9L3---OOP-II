@@ -12,19 +12,19 @@ class Lavoratore {
 
 class Artigiano extends Lavoratore {
   constructor() {
-    super(22, 23, 32);
+    super(22, 15, 15);
   }
 }
 
 class Commerciante extends Lavoratore {
   constructor() {
-    super(22, 25, 35);
+    super(22, 15, 35);
   }
 }
 
 class Professionista extends Lavoratore {
   constructor() {
-    super(2, 30, 40);
+    super(22, 5, 25);
   }
 }
 
