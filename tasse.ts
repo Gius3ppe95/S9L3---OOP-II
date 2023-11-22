@@ -12,19 +12,19 @@ class Lavoratore {
 
 class Artigiano extends Lavoratore {
   constructor() {
-    super(10, 23, 32);
+    super(22, 23, 32);
   }
 }
 
-class Informatico extends Lavoratore {
+class Commerciante extends Lavoratore {
   constructor() {
-    super(20, 25, 35);
+    super(22, 25, 35);
   }
 }
 
-class Autonomo extends Lavoratore {
+class Professionista extends Lavoratore {
   constructor() {
-    super(26, 30, 40);
+    super(2, 30, 40);
   }
 }
 
@@ -55,11 +55,11 @@ choseLabel.addEventListener("change", function () {
     const artigiano = new Artigiano();
     updateInfo(artigiano);
   } else if (selectedValue === "2") {
-    const informatico = new Informatico();
-    updateInfo(informatico);
+    const Commerciante = new Commerciante();
+    updateInfo(Commerciante);
   } else if (selectedValue === "3") {
-    const autonomo = new Autonomo();
-    updateInfo(autonomo);
+    const Professionista = new Professionista();
+    updateInfo(Professionista);
   }
 });
 
@@ -74,12 +74,12 @@ formReference.addEventListener("submit", (e) => {
     updateInfo(artigiano);
     calculateTasse(artigiano, redditoLordoValue);
   } else if (selectedValue === "2") {
-    const informatico = new Informatico();
-    updateInfo(informatico);
-    calculateTasse(informatico, redditoLordoValue);
+    const Commerciante = new Commerciante();
+    updateInfo(Commerciante);
+    calculateTasse(Commerciante, redditoLordoValue);
   } else if (selectedValue === "3") {
-    const autonomo = new Autonomo();
-    updateInfo(autonomo);
-    calculateTasse(autonomo, redditoLordoValue);
+    const Professionista = new Professionista();
+    updateInfo(Professionista);
+    calculateTasse(Professionista, redditoLordoValue);
   }
 });

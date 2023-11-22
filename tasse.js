@@ -31,21 +31,21 @@ var Lavoratore = /** @class */ (function () {
 var Artigiano = /** @class */ (function (_super) {
     __extends(Artigiano, _super);
     function Artigiano() {
-        return _super.call(this, 10, 23, 32) || this;
+        return _super.call(this, 22, 23, 32) || this;
     }
     return Artigiano;
 }(Lavoratore));
 var Informatico = /** @class */ (function (_super) {
     __extends(Informatico, _super);
     function Informatico() {
-        return _super.call(this, 20, 25, 35) || this;
+        return _super.call(this, 22, 25, 35) || this;
     }
     return Informatico;
 }(Lavoratore));
 var Autonomo = /** @class */ (function (_super) {
     __extends(Autonomo, _super);
     function Autonomo() {
-        return _super.call(this, 26, 30, 40) || this;
+        return _super.call(this, 22, 30, 40) || this;
     }
     return Autonomo;
 }(Lavoratore));
